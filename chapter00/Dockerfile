@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install ansible
 
-COPY requirements.txt /app
+COPY ./chapter00/requirements.txt /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
