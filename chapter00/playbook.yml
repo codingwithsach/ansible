@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Ensure Python is installed
+      apt:
+        name: python3
+        state: present
+
+    - name: Print a message
+      debug:
+        msg: "Hello from ansible within Docker!"
